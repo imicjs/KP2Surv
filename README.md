@@ -8,7 +8,6 @@ hypergraphs with uncertainty-aware fusion.
 - Continuous-time survival modeling with a censoring-aware log-normal likelihood.
 - Fold-specific expression normalization and survival-stratified cross-validation.
 - Deterministic WSI and expression-sample selection.
-- Five-fold results reported as mean and sample standard deviation (`ddof=1`).
 
 ## Installation
 
