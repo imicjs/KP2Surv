@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kp2surv"
+version = "0.1.0"
+description = "Knowledge-enhanced uncertainty-guided multimodal hypergraph survival learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy==1.24.3",
+  "pandas==2.2.3",
+  "torch==2.5.1",
+  "torch-geometric==2.6.1",
+  "torch-scatter==2.1.2",
+  "scikit-learn==1.7.2",
+  "h5py==3.9.0",
+  "matplotlib==3.10.0",
+  "tqdm==4.62.0",
+  "openpyxl==3.1.5",
+  "xlrd==2.0.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+kp2surv = "kp2surv.cli:main"
+kp2surv-external = "kp2surv.external:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

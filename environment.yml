@@ -1,0 +1,24 @@
+name: kp2surv
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10.0
+  - pytorch=2.5.1
+  - pytorch-cuda=12.4
+  - numpy=1.24.3
+  - pandas=2.2.3
+  - scikit-learn=1.7.2
+  - h5py=3.9.0
+  - matplotlib=3.10.0
+  - tqdm=4.62.0
+  - openpyxl=3.1.5
+  - xlrd=2.0.2
+  - pip
+  - pip:
+      - --find-links https://data.pyg.org/whl/torch-2.5.0+cu124.html
+      - torch-geometric==2.6.1
+      - torch-scatter==2.1.2
+      - pytest==8.3.5
+      - -e .
